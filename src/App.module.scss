@@ -11,13 +11,18 @@
 }
 
 .card {
-  @apply relative rounded-md cursor-pointer p-4 my-0 mx-auto border border-x-white/10 w-full
-       border-y-white/10 max-w-450 duration-500 ease-in-expo outline-none shadow-md bg-black-950 overflow-hidden before:content-['*']
+  @apply relative rounded-md cursor-pointer p-4 my-0 mx-auto border border-x-white/10 w-full pointer-events-none
+       border-y-white/10 max-w-450 outline-none shadow-md bg-black-950 overflow-hidden before:content-['*']
          before:h-61 before:fixed before:-rotate-45 before:z-20 before:-left-full before:-top--10% before:transition-all
-         before:duration-700 before:shadow-3xl hover:scale-1-15 hover:shadow-2md hover:border-opacity-white
+         before:duration-700 before:shadow-3xl hover:shadow-2md hover:border-opacity-white
          hover:before:brightness-50 hover:before:-top-full hover:before:left-200%
          sm2:mx-0;
-
+  &._init {
+    @apply duration-500 ease-in-expo pointer-events-auto;
+    &:hover {
+      transform: scale(1.015) !important;
+    }
+  }
   &__background {
     @apply absolute top-0 right-0 bottom-0 left-0 z-10 bg-black-950 duration-500 ease-in-expo;
   }

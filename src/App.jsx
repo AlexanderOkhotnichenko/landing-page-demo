@@ -5,8 +5,11 @@ import { Catallog } from "./components/Catallog";
 import { Card } from "./components/Card";
 import { cards } from "./cards";
 import { Exchanges } from "./components/Exchanges";
+import { gsapAnimation } from "./gsapAnimation";
 
 function App() {
+  gsapAnimation();
+
   return (
     <Main>
       <Container>

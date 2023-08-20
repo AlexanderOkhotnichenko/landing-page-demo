@@ -20,9 +20,7 @@ export function gsapAnimation() {
           },
         },
         "start"
-      ).to(`.${styles.card}`, {
-        pointerEvents: "initial"
-      });
+      );
     });
     return () => ctx.revert();
   });
