@@ -1,4 +1,5 @@
 import { v4 as randomId } from 'uuid';
+import indatabet from "./assets/img/indatabet.webp";
 import editor from "./assets/img/editor.webp";
 import shoppay from "./assets/img/shoppay.webp";
 import nifter from "./assets/img/nifter.webp";
@@ -30,6 +31,25 @@ export const data = [
     tags: [
       {
         name: "#mern",
+      },
+    ],
+  },
+  {
+    id: randomId(),
+    link: {
+      href: "https://indatabet.com/"
+    },
+    img: {
+      src: indatabet,
+      alt: "Indatabet"
+    },
+    title: {
+      name: "E-commercial website",
+      attr: "E-commercial website"
+    },
+    tags: [
+      {
+        name: "#e-commercial",
       },
     ],
   },
