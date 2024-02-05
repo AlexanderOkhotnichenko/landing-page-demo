@@ -26,7 +26,7 @@ export function gsapAnimation() {
         opacity: 0,
         x: '20%',
         ease: Back.easeInOut,
-      });
+      }, 1.15);
     });
     return () => ctx.revert();
   }, []);
