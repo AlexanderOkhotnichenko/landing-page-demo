@@ -36,7 +36,7 @@
       .title {
         @apply text-lg text-slate-100 font-mono font-bold w-full whitespace-nowrap overflow-hidden text-ellipsis;
       }
-      .tabs {
+      .tags {
         @apply flex flex-wrap gap-2;
         .item {
           @apply py-1 px-3 bg-indigo-50 rounded-full text-base text-slate-600 text-center block font-bold;
