@@ -1,13 +1,13 @@
 import { useLayoutEffect } from "react";
-import { gsap, Power3 } from "gsap";
-import styles from "./App.module.scss";
+import { gsap, Power3, Back } from "gsap";
+import styles from "./app.module.scss";
 
 export function gsapAnimation() {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      let tl = gsap.timeline({ delay: 0.5 });
+      let tl = gsap.timeline({ delay: 1 });
       tl.from(
-        `.${styles.card}`,
+        `.${styles.cart}`,
         {
           duration: 1.2,
           scale: 0,
@@ -21,7 +21,13 @@ export function gsapAnimation() {
         },
         "start"
       );
+      tl.from(`.${styles.g_content}`, {
+        duration: 0.75,
+        opacity: 0,
+        x: '20%',
+        ease: Back.easeInOut,
+      });
     });
     return () => ctx.revert();
-  });
+  }, []);
 }

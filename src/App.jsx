@@ -1,25 +1,24 @@
 import React from "react";
 import { Main } from "./components/Main";
-import { Container } from "./components/Container";
-import { Catallog } from "./components/Catallog";
-import { Card } from "./components/Card";
-import { cards } from "./cards";
-import { Exchanges } from "./components/Exchanges";
+import { Reference } from "./components/Reference";
+import { Cart } from "./components/Cart";
+import { data } from "./data";
 import { gsapAnimation } from "./gsapAnimation";
+import styles from "./app.module.scss";
 
 function App() {
   gsapAnimation();
 
   return (
     <Main>
-      <Container>
-        <Catallog>
-          {cards.map((card, index) => (
-            <Card key={index} {...card} />
+      <div className={styles.container}>
+        <Reference />
+        <div className={styles.catallog}>
+          {data.map((card, index) => (
+            <Cart key={index} {...card} />
           ))}
-        </Catallog>
-        <Exchanges />
-      </Container>
+        </div>
+      </div>
     </Main>
   );
 }

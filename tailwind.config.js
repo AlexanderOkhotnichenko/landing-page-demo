@@ -44,7 +44,7 @@ export default {
       },
       gridTemplateColumns: {
         'fill-300': 'repeat(auto-fill, minmax(300px, 1fr))',
-        'fill-100': 'repeat(auto-fill, minmax(100%, 1fr))'
+        'fill-screen': 'repeat(auto-fill, minmax(100%, 1fr))'
       },
       screens: {
         'mm': '320px',

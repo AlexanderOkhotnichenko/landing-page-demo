@@ -1,3 +1,6 @@
+import { v4 as randomId } from 'uuid';
+import editor from "./assets/img/editor.webp";
+import shoppay from "./assets/img/shoppay.webp";
 import nifter from "./assets/img/nifter.webp";
 import gastro_chef from "./assets/img/gastro_chef.webp";
 import cat_energy from "./assets/img/cat_energy.webp";
@@ -10,9 +13,28 @@ import just_egg from "./assets/img/just_egg.webp";
 import tropical_kiwi_mix from "./assets/img/tropical_kiwi_mix.webp";
 import orange from "./assets/img/orange.webp";
 
-export const cards = [
+export const data = [
   {
-    id: 0,
+    id: randomId(),
+    link: {
+      href: "https://mern-shoppay.netlify.app"
+    },
+    img: {
+      src: shoppay,
+      alt: "ShopPay"
+    },
+    title: {
+      name: "MERN fullstack application",
+      attr: "MERN fullstack application"
+    },
+    tags: [
+      {
+        name: "#mern",
+      },
+    ],
+  },
+  {
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/landing-page-nifter/"
     },
@@ -31,7 +53,7 @@ export const cards = [
     ],
   },
   {
-    id: 1,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/gastro-chef-v2/"
     },
@@ -50,7 +72,7 @@ export const cards = [
     ],
   },
   {
-    id: 2,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/cat-foot-landing/"
     },
@@ -69,7 +91,7 @@ export const cards = [
     ],
   },
   {
-    id: 3,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/inkom-landing/"
     },
@@ -88,7 +110,26 @@ export const cards = [
     ],
   },
   {
-    id: 4,
+    id: randomId(),
+    link: {
+      href: "https://alexanderokhotnichenko.github.io/edit-image/"
+    },
+    img: {
+      src: editor,
+      alt: "editor"
+    },
+    title: {
+      name: "Photo editor",
+      attr: "Photo editor"
+    },
+    tags: [
+      {
+        name: "#editor",
+      },
+    ],
+  },
+  {
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/dessert-landing/"
     },
@@ -107,7 +148,7 @@ export const cards = [
     ],
   },
   {
-    id: 5,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/react-vite-dashbord/"
     },
@@ -126,7 +167,7 @@ export const cards = [
     ],
   },
   {
-    id: 6,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/admin-dashboard/"
     },
@@ -145,7 +186,7 @@ export const cards = [
     ],
   },
   {
-    id: 7,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/demo-pages/#/catallog/demo-6"
     },
@@ -167,7 +208,7 @@ export const cards = [
     ],
   },
   {
-    id: 8,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/demo-pages/#/catallog/demo-5"
     },
@@ -189,7 +230,7 @@ export const cards = [
     ],
   },
   {
-    id: 9,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/demo-pages/#/catallog/demo-2"
     },
@@ -211,7 +252,7 @@ export const cards = [
     ],
   },
   {
-    id: 10,
+    id: randomId(),
     link: {
       href: "https://alexanderokhotnichenko.github.io/demo-pages/#/catallog/demo-1"
     },
