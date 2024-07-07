@@ -151,25 +151,6 @@ export const data = [
   {
     id: randomId(),
     link: {
-      href: "https://alexanderokhotnichenko.github.io/dessert-landing/"
-    },
-    img: {
-      src: dessert,
-      alt: "Dessert"
-    },
-    title: {
-      name: "Landing Page Dessert",
-      attr: "Landing Page Dessert"
-    },
-    tags: [
-      {
-        name: "#landing",
-      },
-    ],
-  },
-  {
-    id: randomId(),
-    link: {
       href: "https://alexanderokhotnichenko.github.io/react-vite-dashbord/"
     },
     img: {
@@ -202,94 +183,6 @@ export const data = [
     tags: [
       {
         name: "#dashbord",
-      },
-    ],
-  },
-  {
-    id: randomId(),
-    link: {
-      href: "https://alexanderokhotnichenko.github.io/demo-pages/#/catallog/demo-6"
-    },
-    img: {
-      src: arc_vector,
-      alt: "Arc Vector"
-    },
-    title: {
-      name: "Animations Page Arc Vector",
-      attr: "Animations Page Arc Vector"
-    },
-    tags: [
-      {
-        name: "#animations",
-      },
-      {
-        name: "#gsap3",
-      },
-    ],
-  },
-  {
-    id: randomId(),
-    link: {
-      href: "https://alexanderokhotnichenko.github.io/demo-pages/#/catallog/demo-5"
-    },
-    img: {
-      src: just_egg,
-      alt: "Just Egg"
-    },
-    title: {
-      name: "Animations Page Just Egg",
-      attr: "Animations Page Just Egg"
-    },
-    tags: [
-      {
-        name: "#animations",
-      },
-      {
-        name: "#gsap3",
-      },
-    ],
-  },
-  {
-    id: randomId(),
-    link: {
-      href: "https://alexanderokhotnichenko.github.io/demo-pages/#/catallog/demo-2"
-    },
-    img: {
-      src: tropical_kiwi_mix,
-      alt: "Tropical Kiwi Mix"
-    },
-    title: {
-      name: "Animations Page Tropical Kiwi Mix",
-      attr: "Animations Page Tropical Kiwi Mix"
-    },
-    tags: [
-      {
-        name: "#animations",
-      },
-      {
-        name: "#gsap3",
-      },
-    ],
-  },
-  {
-    id: randomId(),
-    link: {
-      href: "https://alexanderokhotnichenko.github.io/demo-pages/#/catallog/demo-1"
-    },
-    img: {
-      src: orange,
-      alt: "Orange"
-    },
-    title: {
-      name: "Animations Page Orange",
-      attr: "Animations Page Orange"
-    },
-    tags: [
-      {
-        name: "#animations",
-      },
-      {
-        name: "#gsap3",
       },
     ],
   },
